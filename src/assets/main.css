@@ -1,8 +1,9 @@
 @import './base.css';
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('satoshi.css');
 
 * {
-    font-family: satoshi;
+    font-family: 'Satoshi', 'Montserrat';
 }
 
 body {
