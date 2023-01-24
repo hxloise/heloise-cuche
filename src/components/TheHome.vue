@@ -29,8 +29,9 @@ function goTo() {
 
 
 <template>
-  <the-mobile-wait v-if="isBurger"></the-mobile-wait>
-  <div v-if="!isBurger" id="theHome">
+  <!-- <the-mobile-wait v-if="isBurger"></the-mobile-wait> -->
+  <!-- <div v-if="!isBurger" id="theHome"> -->
+    <div id="theHome">
     <div v-if="!isBurger" id="header">
       <the-menu-desktop></the-menu-desktop>
     </div>
