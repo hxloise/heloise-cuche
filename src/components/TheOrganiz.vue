@@ -50,7 +50,7 @@ function home(){
             </div>
           </div>
           <div id="imageContent">
-            <img src="01_Organiz.png" alt="Mockup Figma Organiz" />
+            <img src="/01_Organiz.png" alt="Mockup Figma Organiz" />
           </div>
         </div>
       </div>
@@ -73,11 +73,11 @@ function home(){
       </div>
       <div class="video-pres">
         <video class="vd" controls autoplay>
-          <source src="vid\VD_OZ.mp4" />
+          <source src="/VD_OZ.mp4" />
           type=video/mp4>
         </video>
         <video class="vd bottom" controls autoplay>
-          <source src="vid\VD_OZ.mp4" />
+          <source src="/VD_OZ.mp4" />
           type=video/mp4>
         </video>
       </div>
@@ -116,7 +116,7 @@ function home(){
           ici, des bénéfices pour l'étudiant.
         </p>
       </div>
-      <img src="img/ROJ.png" />
+      <img src="/img/ROJ.png" />
       <div class="p-b">
         <h1 id="3">{{ menuContent[2].content }}</h1>
         <p>
