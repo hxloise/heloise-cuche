@@ -13,7 +13,7 @@ function home(){
 <template>
   <div class="main">
     <div class="thisContent">
-      <img src="/img/00_404.png" alt="Oops pas de pages trouvées!" />
+      <img src="/00_404.png" alt="Oops pas de pages trouvées!" />
     </div>
     <p class="thisContent">Woopsi, cette page est <b>introuvable</b>. Souhaitez-vous retourner à l'accueil ?</p>
       <the-next @click="home()">Accueil</the-next>
