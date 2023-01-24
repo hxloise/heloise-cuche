@@ -1,0 +1,46 @@
+@import './base.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+    font-family: satoshi;
+}
+
+body {
+    margin: 0%;
+    /* background-image: url(..\img\texture.png); */
+    color: var(--pt-c-blue);
+}
+
+#header {
+    display: flex;
+    justify-content: right;
+}
+
+#headerProj {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.header {
+    display: flex;
+    justify-content: right;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 0%
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin: 0%;
+}

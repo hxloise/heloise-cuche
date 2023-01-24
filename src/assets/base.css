@@ -1,0 +1,16 @@
+/* palette de couleurs */
+:root{
+    --pt-c-white: #ffffff;
+    --pt-c-blue: #1D2037;
+    --pt-c-orange: #F05653;
+
+    --ombre: 5px 4px 20px 4px #00000040;
+
+}
+
+/* attribution des couleurs */
+:root{
+    --color-background: var(--pt-c-white);
+}
+
+/* ombres */

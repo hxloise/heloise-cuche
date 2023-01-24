@@ -1,0 +1,18 @@
+[
+    {
+        "domaine": "Création de contenu",
+        "outils": "Adobe Audition - Indesign -  Figma - Photoshop - Premiere Pro."
+    },
+    {
+        "domaine": "Développement backend/frontend",
+        "outils": "CSS, D3, HTML, Javascript, Laravel, PHP, PostgreSQL, SQL, VueJs."
+    },
+    {
+        "domaine": "Marketing digital",
+        "outils": "WordPress, WooCommerce, MailChimp."
+    },
+    {
+        "domaine": "UI/UX design",
+        "outils": "Tests utilisateurs, analyses ergonomiques, design system, wireframes. "
+    }
+]
