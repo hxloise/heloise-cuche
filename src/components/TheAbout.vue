@@ -8,6 +8,7 @@ import { isBurger } from "../stores.js";
 import { ref } from "vue";
 import content from "../content/about.json";
 import legend from "../content/legend.json";
+import TheMobileWait from "./TheMobileWait.vue";
 
 const i = ref(1);
 const showImage = ref(false);
@@ -51,7 +52,8 @@ window.top.document.title = "Héloïse Cuche - À propos";
 </script>
 
 <template>
-  <div id="theAbout">
+<the-mobile-wait v-if="isBurger"></the-mobile-wait> 
+  <div v-if="!isBurger" id="theAbout">
     <div v-if="!isBurger" id="header">
       <the-menu-desktop></the-menu-desktop>
     </div>

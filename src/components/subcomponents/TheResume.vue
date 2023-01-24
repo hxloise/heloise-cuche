@@ -15,7 +15,7 @@ function move() {
 </script>
 
 <template>
-  <div id="res" @click="move()">
+      <router-link id="res" to="/organiz">
     <div id="rect-description">
       <div id="date-description">
         <p class="date"> {{ date }}</p>
@@ -33,7 +33,7 @@ function move() {
         <span class="material-icons">trending_flat</span>
       </div>
     </div>
-  </div>
+      </router-link>
 </template>
 
 <style scoped>
@@ -46,7 +46,7 @@ function move() {
   height: 30vh;
 }
 #res {
-  /* width: 24%; */
+  width: 24%;
   height: 100%;
   margin: 1% 1% 0% 1%;
   align-self: flex-end;

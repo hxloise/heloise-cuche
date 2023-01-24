@@ -1,5 +1,7 @@
 <script setup>
 import TheNext from "./subcomponents/TheNext.vue";
+import TheMobileWait from "./TheMobileWait.vue";
+import { isBurger } from "../stores.js";
 
 window.top.document.title = "Héloïse Cuche - Woopsi";
 
@@ -11,7 +13,8 @@ function home(){
 </script>
 
 <template>
-  <div class="main">
+<the-mobile-wait v-if="isBurger"></the-mobile-wait>
+  <div v-if="!isBurger" class="main">
     <div class="thisContent">
       <img src="/00_404.png" alt="Oops pas de pages trouvées!" />
     </div>

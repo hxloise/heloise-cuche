@@ -29,12 +29,12 @@ function goTo() {
 
 
 <template>
-  <!-- <the-mobile-wait v-if="isBurger"></the-mobile-wait> -->
+  <the-mobile-wait v-if="isBurger"></the-mobile-wait>
   <div v-if="!isBurger" id="theHome">
     <div v-if="!isBurger" id="header">
       <the-menu-desktop></the-menu-desktop>
     </div>
-    <div id="header-mobile">
+    <div v-if="isBurger" id="header-mobile">
       <the-menu-mobile></the-menu-mobile>
     </div>
     <div id="noMenu">
@@ -66,13 +66,12 @@ function goTo() {
             :src="`/0${i + 1}_Projet.png`"
             :alt="projet.alt"
           />
-          <router-link to="/organiz">
-            <the-resume
-              :date="projet.date"
-              :titre="projet.titre"
-              :description="projet.description"
-              :url="projet.url"
-          /></router-link>
+          <the-resume
+            :date="projet.date"
+            :titre="projet.titre"
+            :description="projet.description"
+            :url="projet.url"
+          />
           <img
             v-if="i % 2 != 0"
             :src="`/0${i + 1}_Projet.png`"

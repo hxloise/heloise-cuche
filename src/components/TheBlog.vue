@@ -7,6 +7,7 @@ import menuContent from "../content/blogMenu.json";
 import TheNumberMenu from "./subcomponents/TheNumberMenu.vue";
 import content from "../content/blogContent.json";
 import { ref } from "vue";
+import TheMobileWait from "./TheMobileWait.vue";
 
 window.top.document.title = "Héloïse Cuche - Blog";
 
@@ -39,13 +40,14 @@ function getArticle(number) {
 </script>
 
 <template>
+<the-mobile-wait v-if="isBurger"></the-mobile-wait> 
   <div v-if="!isBurger" id="header">
     <the-menu-desktop></the-menu-desktop>
   </div>
-  <div v-if="isBurger" id="header-mobile">
+  <div v-if="!isBurger" id="boxe-menu-content">
+     <div v-if="isBurger" id="header-mobile">
     <the-menu-mobile></the-menu-mobile>
   </div>
-  <div id="boxe-menu-content">
     <div
       v-for="c in menuContent"
       :key="c.number"
