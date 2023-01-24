@@ -1,13 +1,15 @@
 <script setup>
-import { isBurger } from "../stores.js";
+import { isBurger, isMobile } from "../stores.js";
 import TheBack from "./subcomponents/TheBack.vue";
 import TheMenuDesktop from "./subcomponents/TheMenuDesktop.vue";
+import TheMenuMobile from "./subcomponents/TheMenuMobile.vue";
 import TheNext from "./subcomponents/TheNext.vue";
 import TheFooter from "./subcomponents/TheFooter.vue";
 import TheNumberMenu from "./subcomponents/TheNumberMenu.vue";
 import theLittleTitle from "./subcomponents/TheLittleTitle.vue";
 import menuContent from "../content/menuNumber.json";
 import titleInfo from "../content/resume.json";
+import TheMobileWait from "./TheMobileWait.vue";
 
 window.top.document.title = "Héloïse Cuche - Organiz";
 
@@ -15,20 +17,21 @@ function goSection(anchor) {
   window.location.href = "#" + anchor;
 }
 
-function home(){
-      window.location.href = "https://heloise-cuche.onrender.com";
+function home() {
+  window.location.href = "https://heloise-cuche.onrender.com";
 }
 </script>
 
 <template>
-  <div v-if="!isBurger" id="headerProj">
-    <!-- <the-back></the-back> -->
-    <the-menu-desktop></the-menu-desktop>
-  </div>
-  <div v-if="isBurger" id="header-mobile">
-    <the-menu-mobile></the-menu-mobile>
-  </div>
-  <div id="noMenu">
+  <the-mobile-wait v-if="isMobile"></the-mobile-wait>
+  <div v-if="!isMobile" id="noMenu">
+    <div v-if="!isBurger" id="headerProj">
+      <!-- <the-back></the-back> -->
+      <the-menu-desktop></the-menu-desktop>
+    </div>
+    <div v-if="isBurger" id="header-mobile">
+      <the-menu-mobile></the-menu-mobile>
+    </div>
     <div id="boxe-Organiz">
       <div id="boxe-menu-title">
         <div id="main-informations">
@@ -120,20 +123,25 @@ function home(){
       <div class="p-b">
         <h1 id="3">{{ menuContent[2].content }}</h1>
         <p>
-          À terme de ce projet, la dimension d’Ingénieure des médias prend tout son sens. 
-          De plus, ce projet m’a permis de me rendre compte de la complexité lié à ce type 
-          de projet et de l’importance d’une approche centré sur l’utilisateur. Cette dernière 
-          permet de rapidement ce rendre compte des principaux problèmes liés à une expérience 
-          et une interface et également de pouvoir envisager des nouvelles solutions.
+          À terme de ce projet, la dimension d’Ingénieure des médias prend tout
+          son sens. De plus, ce projet m’a permis de me rendre compte de la
+          complexité lié à ce type de projet et de l’importance d’une approche
+          centré sur l’utilisateur. Cette dernière permet de rapidement ce
+          rendre compte des principaux problèmes liés à une expérience et une
+          interface et également de pouvoir envisager des nouvelles solutions.
         </p>
       </div>
     </div>
-    <h1 class="h-end">Merci pour la lecture! <br/>
-      Découvres mes autres projets par ici...</h1>
-      <the-next icone="arrow_forward_ios" sense="change" @click="home()">Accueil</the-next>
+    <h1 class="h-end">
+      Merci pour la lecture! <br />
+      Découvres mes autres projets par ici...
+    </h1>
+    <the-next icone="arrow_forward_ios" sense="change" @click="home()"
+      >Accueil</the-next
+    >
   </div>
 
-  <the-footer></the-footer>
+  <the-footer v-if="!isMobile"></the-footer>
 </template>
 
 <style scoped>
@@ -203,7 +211,7 @@ h1 {
   margin: 15% 0% 13% 10%;
   width: 50%;
 }
-.h-end{
-  margin : 5% 0% 5% 8%; 
+.h-end {
+  margin: 5% 0% 5% 8%;
 }
 </style>

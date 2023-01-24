@@ -4,7 +4,7 @@ import TheMenuMobile from "./subcomponents/TheMenuMobile.vue";
 import TheFooter from "./subcomponents/TheFooter.vue";
 import TheResume from "./subcomponents/TheResume.vue";
 import TheMessage from "./subcomponents/TheMessage.vue";
-import { isBurger, isAbove } from "../stores.js";
+import { isBurger, isAbove, isMobile} from "../stores.js";
 import content from "../content/resume.json";
 import TheMobileWait from "./TheMobileWait.vue";
 
@@ -29,9 +29,8 @@ function goTo() {
 
 
 <template>
-  <!-- <the-mobile-wait v-if="isBurger"></the-mobile-wait> -->
-  <!-- <div v-if="!isBurger" id="theHome"> -->
-    <div id="theHome">
+  <the-mobile-wait v-if="isMobile"></the-mobile-wait> 
+  <div v-if="!isMobile" id="theHome"> 
     <div v-if="!isBurger" id="header">
       <the-menu-desktop></the-menu-desktop>
     </div>
@@ -50,7 +49,7 @@ function goTo() {
         <div id="boxe-popUp">
           <the-message
             class="message"
-            content="Ciao! Combinant des compétences 360° dans le digital, je souhaite me spécialiser dans l'UX Design. Si mon profil t'intéresse, n'hésite pas à me faire signe !"
+            content="Combinant des compétences 360° dans le digital, je souhaite me spécialiser dans l'UX Design. Si mon profil t'intéresse, n'hésite pas à me faire signe !"
           ></the-message>
           <img src="/01_profil.png" alt="Heloise Cuche" class="profil" />
         </div>
@@ -147,7 +146,7 @@ function goTo() {
 .proj {
   display: flex;
   flex-direction: row;
-  margin: 2% 0% 10% 0%;
+  margin: 2% 0% 5% 0%;
 }
 .imgright {
   justify-content: flex-end;

@@ -1,9 +1,13 @@
 @import './base.css';
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url('satoshi.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300&display=swap');
+
+
+
 
 * {
-    font-family: 'Satoshi', 'Montserrat';
+    font-family: 'Lexend', sans-serif;
 }
 
 body {
@@ -26,11 +30,12 @@ body {
 .header {
     display: flex;
     justify-content: right;
+   
 }
 
 h1 {
     font-size: 3rem;
-    font-weight: normal;
+    font-family: 'Space Grotesk', sans-serif;
     margin: 0%;
 }
 
@@ -42,6 +47,6 @@ h2 {
 
 p {
     font-size: 1.2rem;
-    font-weight: lighter;
+    font-family: lighter;
     margin: 0%;
 }

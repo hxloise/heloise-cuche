@@ -4,7 +4,7 @@ import TheMenuMobile from "./subcomponents/TheMenuMobile.vue";
 import TheSection from "./subcomponents/TheSection.vue";
 import TheFooter from "./subcomponents/TheFooter.vue";
 import TheNext from "./subcomponents/TheNext.vue";
-import { isBurger } from "../stores.js";
+import { isBurger, isMobile } from "../stores.js";
 import { ref } from "vue";
 import content from "../content/about.json";
 import legend from "../content/legend.json";
@@ -52,8 +52,8 @@ window.top.document.title = "Héloïse Cuche - À propos";
 </script>
 
 <template>
-<the-mobile-wait v-if="isBurger"></the-mobile-wait> 
-  <div v-if="!isBurger" id="theAbout">
+<the-mobile-wait v-if="isMobile"></the-mobile-wait>
+  <div v-if="!isMobile" id="theAbout">
     <div v-if="!isBurger" id="header">
       <the-menu-desktop></the-menu-desktop>
     </div>

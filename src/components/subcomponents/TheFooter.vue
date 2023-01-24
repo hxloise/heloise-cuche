@@ -15,7 +15,7 @@ function newWindow(id) {
 <template>
   <div id="footer">
     <div>
-      <h2><b>Mes compétences/domaines coups de coeur &lt;3 </b></h2>
+      <h2><b>Mes compétences et domaines coups de coeur &lt;3 </b></h2>
       <div v-for="single in content" :key="single">
         <the-boxe-more
           :domaine="single.domaine"

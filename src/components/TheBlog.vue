@@ -2,7 +2,7 @@
 import TheMenuDesktop from "./subcomponents/TheMenuDesktop.vue";
 import TheMenuMobile from "./subcomponents/TheMenuMobile.vue";
 import TheFooter from "./subcomponents/TheFooter.vue";
-import { isBurger } from "../stores.js";
+import { isBurger, isMobile } from "../stores.js";
 import menuContent from "../content/blogMenu.json";
 import TheNumberMenu from "./subcomponents/TheNumberMenu.vue";
 import content from "../content/blogContent.json";
@@ -40,11 +40,12 @@ function getArticle(number) {
 </script>
 
 <template>
-<the-mobile-wait v-if="isBurger"></the-mobile-wait> 
+<the-mobile-wait v-if="isMobile"></the-mobile-wait> 
+
   <div v-if="!isBurger" id="header">
     <the-menu-desktop></the-menu-desktop>
   </div>
-  <div v-if="!isBurger" id="boxe-menu-content">
+  <div v-if="!isMobile" id="boxe-menu-content">
      <div v-if="isBurger" id="header-mobile">
     <the-menu-mobile></the-menu-mobile>
   </div>
@@ -103,7 +104,7 @@ function getArticle(number) {
     </div>
   </div>
 
-  <the-footer></the-footer>
+  <the-footer v-if="!isMobile"></the-footer>
 </template>
 
 <style scoped>
