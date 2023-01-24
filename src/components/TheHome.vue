@@ -34,7 +34,7 @@ function goTo() {
     <div v-if="!isBurger" id="header">
       <the-menu-desktop></the-menu-desktop>
     </div>
-    <div v-if="isBurger" id="header-mobile">
+    <div id="header-mobile">
       <the-menu-mobile></the-menu-mobile>
     </div>
     <div id="noMenu">
