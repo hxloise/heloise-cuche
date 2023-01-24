@@ -29,7 +29,7 @@ function goTo() {
 
 
 <template>
-  <the-mobile-wait v-if="isBurger"></the-mobile-wait>
+  <!-- <the-mobile-wait v-if="isBurger"></the-mobile-wait> -->
   <div v-if="!isBurger" id="theHome">
     <div v-if="!isBurger" id="header">
       <the-menu-desktop></the-menu-desktop>
@@ -179,5 +179,6 @@ hr {
 }
 a {
   color: black;
+  text-decoration: none;
 }
 </style>

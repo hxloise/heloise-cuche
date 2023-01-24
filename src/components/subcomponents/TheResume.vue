@@ -9,7 +9,7 @@ const props = defineProps({
 });
 
 function move() {
-  window.location.href = props.url;
+  // window.location.href = props.url;
 }
 
 </script>
@@ -46,7 +46,7 @@ function move() {
   height: 30vh;
 }
 #res {
-  width: 24%;
+  /* width: 24%; */
   height: 100%;
   margin: 1% 1% 0% 1%;
   align-self: flex-end;
