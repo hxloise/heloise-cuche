@@ -116,7 +116,7 @@ function home(){
           ici, des bénéfices pour l'étudiant.
         </p>
       </div>
-      <img src="/img/ROJ.png" />
+      <img src="/ROJ.png" />
       <div class="p-b">
         <h1 id="3">{{ menuContent[2].content }}</h1>
         <p>
