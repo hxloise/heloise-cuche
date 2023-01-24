@@ -63,7 +63,7 @@ function goTo() {
         >
           <img
             v-if="i % 2 == 0"
-            :src="`/0${i + 1}_projet.png`"
+            :src="`/0${i + 1}_Projet.png`"
             :alt="projet.alt"
           />
           <the-resume
