@@ -51,7 +51,7 @@ function goTo() {
             class="message"
             content="Ciao! Combinant des compétences 360° dans le digital, je souhaite me spécialiser dans l'UX Design. Si mon profil t'intéresse, n'hésite pas à me faire signe !"
           ></the-message>
-          <img src="src\img\01_profil.png" alt="Heloise Cuche" class="profil" />
+          <img src="01_profil.png" alt="Heloise Cuche" class="profil" />
         </div>
       </div>
       <div id="projPres">
@@ -63,7 +63,7 @@ function goTo() {
         >
           <img
             v-if="i % 2 == 0"
-            :src="`src/img/0${i + 1}_projet.png`"
+            :src="`0${i + 1}_projet.png`"
             :alt="projet.alt"
           />
           <the-resume
@@ -74,7 +74,7 @@ function goTo() {
           />
           <img
             v-if="i % 2 != 0"
-            :src="`src/img/0${i + 1}_projet.png`"
+            :src="`0${i + 1}_projet.png`"
             :alt="projet.alt"
           />
         </div>

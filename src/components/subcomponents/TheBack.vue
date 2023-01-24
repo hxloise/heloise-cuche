@@ -3,7 +3,7 @@ import router from "../../router/index.js";
 
 function back() {
   // router.go(-1);
-   window.location.href = "http://localhost:5173/";
+   window.location.href = "https://heloise-cuche.onrender.com";
 }
 </script>
 

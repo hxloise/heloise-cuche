@@ -4,7 +4,7 @@ import TheNext from "./subcomponents/TheNext.vue";
 window.top.document.title = "Héloïse Cuche - Portfolio";
 
 function home() {
-  window.location.href = "http://localhost:5173/";
+  window.location.href = "https://heloise-cuche.onrender.com";
 }
 </script>
 
