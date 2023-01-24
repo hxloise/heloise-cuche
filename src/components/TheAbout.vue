@@ -82,7 +82,7 @@ window.top.document.title = "Héloïse Cuche - À propos";
       <div class="galerie-boxe" v-if="showImage">
         <div v-for="n in 9" :key="n" class="little-img">
           <img
-            :src="'/img/0' + n + '_album.png'"
+            :src="'/0' + n + '_album.png'"
             :id=n
             class="img-gallerie"
             alt="Gallerie personnelle Héloïse Cuche"

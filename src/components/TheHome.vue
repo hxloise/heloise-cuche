@@ -74,7 +74,7 @@ function goTo() {
           />
           <img
             v-if="i % 2 != 0"
-            :src="`/0${i + 1}_projet.png`"
+            :src="`/0${i + 1}_Projet.png`"
             :alt="projet.alt"
           />
         </div>
@@ -100,7 +100,7 @@ function goTo() {
 
 <style scoped>
 #theHome {
-  background-image: url(..\img\texture.png);
+  background-image: url(/texture.png);
 }
 #boxe-degraded-top {
   height: 110vh;
