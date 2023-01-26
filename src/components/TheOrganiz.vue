@@ -69,17 +69,16 @@ function home() {
           <p>
             Réunis par groupe pendant 1 mois, nous avons été amené à repenser un
             système de gestion d’horaire. L’objectif étant de lier toutes nos
-            compétences afin de réaliser comment elles se combinent autour d’un
-            projet digital.
+            compétences afin de comprendre comment elles s'articulent entre elles.
           </p>
         </div>
       </div>
       <div class="video-pres">
-        <video class="vd" controls autoplay>
+        <video class="vd" autoplay loops>
           <source src="/VD_OZ.mp4" />
           type=video/mp4>
         </video>
-        <video class="vd bottom" controls autoplay>
+        <video class="vd bottom" controls autoplay loops>
           <source src="/VD_OZ.mp4" />
           type=video/mp4>
         </video>
@@ -88,47 +87,44 @@ function home() {
         <h1 id="1">{{ menuContent[0].content }}</h1>
         <p>
           GAPS (la plateforme utilisée par la HEIG-VD pour donner accès aux
-          horaires et informations personnelles) est bien souvent critiqué par
-          ses utilisateur.trice.s. Entre le fait qu’il faut passer 6 étapes pour
-          enfin réussir à voir ses horaires ou que des clicks se font seuls
-          lorsqu’un zoom est fait sur la version mobile, nombreux sont les
-          points amenant une expérience frustrante. Repenser cette expérience et
-          proposer notre solution a été un beau challenge a réaliser.<br /><br />
+          horaires et informations personnelles) est bien souvent critiquée par
+          ses utilisateur·trice·s. Entre le nombre d'étape nécessaire pour afficher 
+          son horaire et des cliques qui se réalisent tout seuls, nombreux sont les
+          points amenant une expérience frustrante. Le challenge a été de repenser
+          cette solution ainsi que de l'implémanter.<br /><br />
           Suite de nos premières idées, l’équipe UX a poussé ses recherches afin
           de comprendre les principaux composants liés à une expérience : les
           utilisateurs, le dispositif, le logiciel et l’interaction. Grâce aux
           persona et Jobs To Be Done qu’ils ont réalisés, ils ont pu préparer
           des questionnaires qualitatifs et quantitatifs et ainsi chercher à
-          comprendre au mieux les besoins des utilisateur.trice.s. Suite de ces
+          comprendre au mieux les besoins des utilisateur·trice·s. Suite de ces
           recherches, ils ont prototypé et testé des maquettes, avant d’intégrer
           l’UI final. Cette phase d’analyse et de recherche était nécessaire
           afin de pouvoir créer et proposer une nouvelle interface cohérente à
-          son contexte d’utilisation et innovante pour les utilisateur.trice.s.
+          son contexte d’utilisation et innovante pour les utilisateur·trice·s.
         </p>
       </div>
       <div class="p-b">
         <h1 id="2">{{ menuContent[1].content }}</h1>
         <p>
-          Pour les trois persona, des besoins ont été identifiés. Ainsi, nous
-          avons estimé qu’il serait pertinent de proposer une plateforme
-          “tout-en-un”. De plus, les persona avaient clairement exprimé le
-          besoin de simplifier leur parcours utilisateur, afin de leur permettre
-          de gagner en efficacité. Nous avons imaginé une plateforme où il
-          serait possible d’intégrer directement ses tâches, de consulter son
+          L'équipe UX a déterminé trois persona et pour chacun, des besoins ont été identifiés. Nous
+          avons ainsi estimé qu’il serait pertinent de proposer une plateforme
+          “tout-en-un”. Cela permet de simplifier le parcours utilisateur et de rendre le système d'horaire
+          plus efficace. La solution finale est une WebApp sur laquelle il
+          est possible d’intégrer ses tâches, de consulter son
           horaire, de voir ses notes et pouvoir tester ses moyennes. Un exemple
-          ici, des bénéfices pour l'étudiant.
+          ici, des bénéfices de ce système pour l'étudiant.
         </p>
       </div>
       <img src="/ROJ.png" />
       <div class="p-b">
         <h1 id="3">{{ menuContent[2].content }}</h1>
         <p>
-          À terme de ce projet, la dimension d’Ingénieure des médias prend tout
-          son sens. De plus, ce projet m’a permis de me rendre compte de la
+          À terme de ce projet, la dimension d’Ingénieure des médias a pris tout
+          son sens. De plus, ce projet m’a permis de réaliser la
           complexité lié à ce type de projet et de l’importance d’une approche
-          centré sur l’utilisateur. Cette dernière permet de rapidement ce
-          rendre compte des principaux problèmes liés à une expérience et une
-          interface et également de pouvoir envisager des nouvelles solutions.
+          centré sur l’utilisateur. Selon moi, c'est grâce à cette méthodologie qu'il est
+          possible d'innover de nouvelles solutions pertinente. 
         </p>
       </div>
     </div>

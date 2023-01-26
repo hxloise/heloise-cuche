@@ -16,7 +16,7 @@ function showName() {
   if (isHover.value) {
     contentBox[id].style.boxShadow = "var(--ombre)";
     contentBox[id].style.cursor = "pointer";
-    contentBox[id].style.width = "40%";
+    contentBox[id].style.width = "45%";
   }
   if (!isHover.value) {
     contentBox[id].style.background = "rgba(255, 255, 255, 0.3)";
@@ -24,11 +24,6 @@ function showName() {
     contentBox[id].style.width = "5%";
   }
 }
-
-// function addClass(n) {
-//   let chose = document.getElementsByClassName(n);
-//   chose[0].classList.add("selected");
-// }
 
 </script>
 

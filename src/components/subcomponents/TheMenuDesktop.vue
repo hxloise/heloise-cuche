@@ -29,7 +29,7 @@
     background-color: black;
     border-radius: 0 0 0 1rem;
     height: 7%; 
-    width: 18%;
+    width: 21%;
     position: fixed;
     box-shadow: var(--ombre);
     
